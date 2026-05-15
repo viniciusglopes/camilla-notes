@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Processual - Lingua Portuguesa - 5o Ano</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f4f8; color: #2d3748; line-height: 1.7; padding: 20px; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .header { background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%); color: white; padding: 30px; border-radius: 16px; text-align: center; margin-bottom: 30px; }
+  .header h1 { font-size: 1.8em; margin-bottom: 8px; }
+  .header p { opacity: 0.9; font-size: 1.1em; }
+  .header .date { background: rgba(255,255,255,0.2); display: inline-block; padding: 4px 16px; border-radius: 20px; margin-top: 10px; font-weight: bold; }
+  .section { background: white; border-radius: 12px; padding: 25px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .section h2 { color: #3182ce; font-size: 1.4em; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 3px solid #3182ce; display: flex; align-items: center; gap: 10px; }
+  .section h3 { color: #4a5568; font-size: 1.15em; margin: 18px 0 10px; }
+  .highlight { background: #ebf4ff; border-left: 4px solid #3182ce; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; }
+  .highlight-yellow { background: #fffff0; border-left: 4px solid #ecc94b; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; }
+  .highlight-green { background: #f0fff4; border-left: 4px solid #48bb78; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; }
+  .highlight-red { background: #fff5f5; border-left: 4px solid #fc8181; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; }
+  .concept-box { background: #faf5ff; border: 2px solid #d6bcfa; border-radius: 10px; padding: 16px; margin: 14px 0; }
+  .concept-box strong { color: #6b46c1; }
+  .dica { background: #fffbeb; border: 1px solid #f6e05e; border-radius: 8px; padding: 12px; margin: 12px 0; }
+  .dica::before { content: "Dica importante: "; font-weight: bold; color: #d69e2e; }
+  .emoji-title { font-size: 1.3em; }
+  ul, ol { padding-left: 24px; margin: 8px 0; }
+  li { margin-bottom: 6px; }
+  .table-wrapper { overflow-x: auto; margin: 14px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+  th { background: #3182ce; color: white; padding: 10px 14px; text-align: left; }
+  td { padding: 10px 14px; border-bottom: 1px solid #e2e8f0; }
+  tr:nth-child(even) { background: #f7fafc; }
+  .noticia-exemplo { border: 2px solid #2d3748; border-radius: 12px; overflow: hidden; margin: 20px 0; background: white; }
+  .noticia-header { background: #1a202c; color: white; padding: 8px 16px; font-size: 0.85em; display: flex; justify-content: space-between; }
+  .noticia-body { padding: 20px; }
+  .noticia-titulo { font-size: 1.5em; font-weight: bold; color: #1a202c; line-height: 1.3; margin-bottom: 6px; }
+  .noticia-linhafina { color: #718096; font-size: 1em; margin-bottom: 12px; font-style: italic; }
+  .noticia-info { color: #a0aec0; font-size: 0.85em; margin-bottom: 14px; }
+  .noticia-lead { font-weight: 600; color: #2d3748; margin-bottom: 12px; }
+  .noticia-corpo p { margin-bottom: 10px; }
+  .noticia-img { background: #edf2f7; height: 180px; display: flex; align-items: center; justify-content: center; color: #a0aec0; font-size: 0.9em; margin: 14px 0; border-radius: 8px; }
+  .label-arrow { display: inline-block; position: relative; margin: 6px 0; }
+  .label-box { display: inline-block; padding: 3px 12px; border-radius: 6px; font-size: 0.8em; font-weight: bold; color: white; }
+  .label-titulo { background: #e53e3e; }
+  .label-linhafina { background: #ed8936; }
+  .label-lead { background: #38a169; }
+  .label-corpo { background: #3182ce; }
+  .checklist { list-style: none; padding-left: 8px; }
+  .checklist li { padding: 6px 0; padding-left: 28px; position: relative; }
+  .checklist li::before { content: "☐"; position: absolute; left: 0; font-size: 1.2em; }
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 14px 0; }
+  .compare-box { padding: 14px; border-radius: 8px; }
+  .compare-good { background: #f0fff4; border: 2px solid #48bb78; }
+  .compare-bad { background: #fff5f5; border: 2px solid #fc8181; }
+  @media (max-width: 600px) { .compare-grid { grid-template-columns: 1fr; } }
+  .resumo-box { background: linear-gradient(135deg, #3182ce22, #2b6cb022); border: 2px solid #3182ce; border-radius: 12px; padding: 20px; margin: 16px 0; }
+  @media print { body { background: white; } .section { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>Material de Estudo - Processual</h1>
+  <p>Lingua Portuguesa - 5o Ano</p>
+  <div class="date">Genero Textual: Noticia</div>
+</div>
+
+<!-- ==================== O QUE E NOTICIA ==================== -->
+<div class="section">
+  <h2><span class="emoji-title">📰</span> 1. O que e uma Noticia?</h2>
+
+  <div class="concept-box">
+    <strong>Noticia</strong> e um genero textual jornalistico que tem como objetivo <em>informar</em> o leitor sobre um <strong>fato real</strong> que aconteceu recentemente. Ela e publicada em jornais, revistas, sites de noticias e televisao.
+  </div>
+
+  <h3>Caracteristicas principais da noticia</h3>
+  <ul>
+    <li><strong>Relata fatos reais</strong> — nao e inventada, nao e historia de ficcao</li>
+    <li><strong>E atual</strong> — conta algo que aconteceu recentemente</li>
+    <li><strong>E objetiva</strong> — vai direto ao ponto, sem enrolacao</li>
+    <li><strong>E impessoal</strong> — o jornalista NAO da a opiniao dele; apenas relata o que aconteceu</li>
+    <li><strong>Tem interesse publico</strong> — e algo que importa para muitas pessoas saberem</li>
+    <li><strong>Responde as perguntas essenciais</strong> — O que? Quem? Quando? Onde? Como? Por que?</li>
+  </ul>
+
+  <div class="highlight">
+    <strong>Situacao comunicativa da noticia:</strong><br>
+    <strong>Quem escreve?</strong> O jornalista (ou reporter).<br>
+    <strong>Para quem?</strong> O publico geral (leitores do jornal, site ou revista).<br>
+    <strong>Com que finalidade?</strong> Informar sobre fatos reais e atuais.<br>
+    <strong>Onde circula?</strong> Jornais impressos, sites, TV, radio, redes sociais de noticias.
+  </div>
+</div>
+
+<!-- ==================== ESTRUTURA DA NOTICIA ==================== -->
+<div class="section">
+  <h2><span class="emoji-title">🏗️</span> 2. Estrutura da Noticia</h2>
+
+  <p>Uma noticia bem escrita segue uma estrutura organizada com 4 partes:</p>
+
+  <div class="table-wrapper">
+    <table>
+      <tr><th>Parte</th><th>O que e</th><th>O que deve conter</th></tr>
+      <tr>
+        <td><span class="label-box label-titulo">TITULO</span></td>
+        <td>A manchete — a primeira coisa que o leitor ve</td>
+        <td>Frase curta e chamativa que resume o fato principal. Deve atrair a atencao do leitor.</td>
+      </tr>
+      <tr>
+        <td><span class="label-box label-linhafina">LINHA FINA</span></td>
+        <td>Frase logo abaixo do titulo</td>
+        <td>Complementa o titulo com uma informacao a mais. Aparece em letra menor. Nem toda noticia tem, mas e muito comum.</td>
+      </tr>
+      <tr>
+        <td><span class="label-box label-lead">LEAD (LIDE)</span></td>
+        <td>O primeiro paragrafo da noticia</td>
+        <td>O paragrafo mais importante! Resume todo o fato respondendo: <strong>O que? Quem? Quando? Onde? Como? Por que?</strong></td>
+      </tr>
+      <tr>
+        <td><span class="label-box label-corpo">CORPO DO TEXTO</span></td>
+        <td>Os paragrafos seguintes</td>
+        <td>Detalha o fato com mais informacoes, dados, depoimentos de pessoas envolvidas e contexto.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="dica">
+    O <strong>lead</strong> e a parte mais importante! Se o leitor ler APENAS o primeiro paragrafo, ele ja deve entender o fato principal. As informacoes vao da mais importante para a menos importante (isso se chama <strong>piramide invertida</strong>).
+  </div>
+
+  <h3>As 6 perguntas do Lead</h3>
+  <div class="concept-box">
+    Todo bom lead responde a maioria destas perguntas:
+    <ul>
+      <li><strong>O QUE</strong> aconteceu?</li>
+      <li><strong>QUEM</strong> esteve envolvido?</li>
+      <li><strong>QUANDO</strong> aconteceu?</li>
+      <li><strong>ONDE</strong> aconteceu?</li>
+      <li><strong>COMO</strong> aconteceu?</li>
+      <li><strong>POR QUE</strong> aconteceu?</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ==================== LINGUAGEM JORNALISTICA ==================== -->
+<div class="section">
+  <h2><span class="emoji-title">✍️</span> 3. Linguagem Jornalistica</h2>
+
+  <div class="concept-box">
+    A linguagem usada em noticias tem regras especificas que a diferenciam de outros textos:
+  </div>
+
+  <ul>
+    <li><strong>Clara e direta:</strong> frases curtas, sem palavras dificeis desnecessarias</li>
+    <li><strong>Objetiva:</strong> vai direto ao ponto, sem rodeios</li>
+    <li><strong>Na 3a pessoa:</strong> usa "ele", "ela", "eles" — o jornalista nao usa "eu" nem "voce"</li>
+    <li><strong>Norma padrao:</strong> segue as regras gramaticais (concordancia, ortografia, pontuacao)</li>
+    <li><strong>Verbos no passado:</strong> geralmente usa passado porque relata algo que ja aconteceu ("O prefeito inaugurou...", "Os alunos participaram...")</li>
+    <li><strong>Sem girias ou expressoes informais:</strong> nao usa "tipo assim", "mano", "show de bola"</li>
+  </ul>
+
+  <h3>Comparando: linguagem do dia a dia vs linguagem jornalistica</h3>
+  <div class="compare-grid">
+    <div class="compare-box compare-bad">
+      <strong style="color: #e53e3e;">Linguagem informal</strong><br>
+      "Ontem a chuva foi absurda, mano! Alagou tudo no centro, foi um caos total, tipo, ninguem conseguia passar."
+    </div>
+    <div class="compare-box compare-good">
+      <strong style="color: #38a169;">Linguagem jornalistica</strong><br>
+      "Forte temporal causou alagamentos em diversas ruas do centro da cidade na tarde desta quarta-feira, dificultando a passagem de pedestres e veiculos."
+    </div>
+  </div>
+</div>
+
+<!-- ==================== FATO x OPINIAO x INFORMACAO ==================== -->
+<div class="section">
+  <h2><span class="emoji-title">🔍</span> 4. Fato, Opiniao e Informacao</h2>
+
+  <p>Saber a diferenca entre fato, opiniao e informacao e essencial para escrever (e ler) noticias:</p>
+
+  <div class="table-wrapper">
+    <table>
+      <tr><th>Conceito</th><th>O que e</th><th>Exemplo</th></tr>
+      <tr>
+        <td><strong>FATO</strong></td>
+        <td>Algo que realmente aconteceu e pode ser comprovado. E verdadeiro e verificavel.</td>
+        <td>"A escola Municipal Santos Dumont inaugurou uma nova biblioteca no dia 10 de maio."</td>
+      </tr>
+      <tr>
+        <td><strong>OPINIAO</strong></td>
+        <td>O que alguem pensa ou acha sobre algo. E pessoal e pode variar de pessoa para pessoa.</td>
+        <td>"Eu acho que a nova biblioteca e a melhor coisa que aconteceu na escola."</td>
+      </tr>
+      <tr>
+        <td><strong>INFORMACAO</strong></td>
+        <td>Dados, numeros ou detalhes que ajudam a entender melhor o fato.</td>
+        <td>"A biblioteca possui 2.000 livros e funcionara de segunda a sexta, das 8h as 17h."</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="highlight-red">
+    <strong>Regra de ouro da noticia:</strong><br>
+    A noticia deve conter <strong>fatos</strong> e <strong>informacoes</strong>, mas NUNCA a opiniao do jornalista. Se alguem der uma opiniao na noticia, deve ficar claro que e a fala daquela pessoa (entre aspas), e nao do jornalista.
+  </div>
+
+  <div class="highlight-green">
+    <strong>Como incluir a fala de alguem sem dar opiniao:</strong><br>
+    "Segundo a diretora Maria Silva, <em>'a biblioteca vai transformar a forma como os alunos estudam'</em>."<br><br>
+    Perceba: a opiniao e da diretora (entre aspas), nao do jornalista. O jornalista apenas relatou o que ela disse.
+  </div>
+
+  <h3>Exercicio mental: isso e fato ou opiniao?</h3>
+  <div class="table-wrapper">
+    <table>
+      <tr><th>Frase</th><th>Fato ou Opiniao?</th></tr>
+      <tr><td>"O Brasil tem mais de 200 milhoes de habitantes."</td><td><strong>FATO</strong> (dado verificavel)</td></tr>
+      <tr><td>"O Brasil e o melhor pais do mundo."</td><td><strong>OPINIAO</strong> (nem todos concordam)</td></tr>
+      <tr><td>"O jogo terminou 3 a 1 para o Atletico."</td><td><strong>FATO</strong> (resultado verificavel)</td></tr>
+      <tr><td>"O Atletico jogou muito bem."</td><td><strong>OPINIAO</strong> (depende do ponto de vista)</td></tr>
+      <tr><td>"A temperatura chegou a 38 graus ontem."</td><td><strong>FATO</strong> (dado medido)</td></tr>
+      <tr><td>"Ontem fez um calor insuportavel."</td><td><strong>OPINIAO</strong> ("insuportavel" e subjetivo)</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== EXEMPLO COMPLETO DE NOTICIA ==================== -->
+<div class="section">
+  <h2><span class="emoji-title">📋</span> 5. Exemplo Completo de uma Noticia</h2>
+
+  <p>Veja abaixo um exemplo de noticia com todas as partes identificadas:</p>
+
+  <div class="noticia-exemplo">
+    <div class="noticia-header">
+      <span>JORNAL DA ESCOLA</span>
+      <span>Belo Horizonte, 15 de maio de 2026</span>
+    </div>
+    <div class="noticia-body">
+
+      <div style="margin-bottom: 4px;"><span class="label-box label-titulo">TITULO</span></div>
+      <div class="noticia-titulo">Estudantes de BH criam horta comunitaria e doam alimentos para familias do bairro</div>
+
+      <div style="margin-bottom: 4px;"><span class="label-box label-linhafina">LINHA FINA</span></div>
+      <div class="noticia-linhafina">Projeto iniciado por alunos do 5o ano ja produziu mais de 200 quilos de verduras em seis meses</div>
+
+      <div class="noticia-info">Por Ana Souza | 15/05/2026 - 10h30</div>
+
+      <div class="noticia-img">[ Foto: Alunos regando a horta no patio da escola ]</div>
+
+      <div style="margin-bottom: 4px;"><span class="label-box label-lead">LEAD (1o PARAGRAFO)</span></div>
+      <div class="noticia-lead">
+        Alunos do 5o ano da Escola Municipal Monteiro Lobato, no bairro Santa Efigenia, em Belo Horizonte, criaram uma horta comunitaria no patio da escola no inicio deste ano. Desde entao, o projeto ja produziu mais de 200 quilos de verduras e legumes, que sao doados semanalmente para 30 familias em situacao de vulnerabilidade no bairro.
+      </div>
+
+      <div style="margin-bottom: 4px;"><span class="label-box label-corpo">CORPO DO TEXTO</span></div>
+      <div class="noticia-corpo">
+        <p>A ideia surgiu durante uma aula de ciencias, quando os estudantes discutiam sobre alimentacao saudavel e desperdicio de alimentos. "Os alunos perguntaram por que a escola nao tinha uma horta, e nos decidimos transformar essa pergunta em acao", contou a professora Lucia Ferreira, que coordena o projeto.</p>
+
+        <p>A horta ocupa uma area de 50 metros quadrados e cultiva alface, couve, cenoura, tomate e temperos como salsinha e cebolinha. Os proprios alunos sao responsaveis por plantar, regar e colher, em atividades realizadas duas vezes por semana.</p>
+
+        <p>Segundo a diretora da escola, Patricia Mendes, o projeto sera ampliado no proximo semestre. "Queremos dobrar a area da horta e incluir alunos de outras series", afirmou.</p>
+
+        <p>As familias beneficiadas recebem os alimentos toda sexta-feira na porta da escola. "E uma ajuda muito grande. Meus filhos agora comem verdura com gosto, porque sabem que vem da escola deles", disse Maria das Gracas, mae de dois alunos.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Identificando as 6 perguntas no lead:</h3>
+  <div class="table-wrapper">
+    <table>
+      <tr><th>Pergunta</th><th>Resposta no lead</th></tr>
+      <tr><td><strong>O QUE?</strong></td><td>Criaram uma horta comunitaria que doa alimentos</td></tr>
+      <tr><td><strong>QUEM?</strong></td><td>Alunos do 5o ano da Escola Municipal Monteiro Lobato</td></tr>
+      <tr><td><strong>QUANDO?</strong></td><td>No inicio deste ano (2026)</td></tr>
+      <tr><td><strong>ONDE?</strong></td><td>No bairro Santa Efigenia, em Belo Horizonte</td></tr>
+      <tr><td><strong>COMO?</strong></td><td>Cultivando verduras no patio da escola</td></tr>
+      <tr><td><strong>POR QUE?</strong></td><td>Para doar a familias em situacao de vulnerabilidade (detalhado no corpo)</td></tr>
+    </table>
+  </div>
+
+  <h3>O que torna esse exemplo uma boa noticia?</h3>
+  <ul>
+    <li>O <strong>titulo</strong> e claro e resume o fato principal</li>
+    <li>A <strong>linha fina</strong> acrescenta um dado importante (200 kg em 6 meses)</li>
+    <li>O <strong>lead</strong> responde as 6 perguntas essenciais em um unico paragrafo</li>
+    <li>O <strong>corpo</strong> traz detalhes, depoimentos entre aspas e contexto</li>
+    <li>A linguagem e <strong>objetiva</strong> — o jornalista nao diz "que lindo projeto" (opiniao)</li>
+    <li>As opinioes aparecem entre aspas, atribuidas a pessoas especificas (professora, diretora, mae)</li>
+    <li>Usa <strong>norma padrao</strong> e verbos adequados</li>
+  </ul>
+</div>
+
+<!-- ==================== CHECKLIST PARA A PROVA ==================== -->
+<div class="section">
+  <h2><span class="emoji-title">✅</span> 6. Checklist: O que Verificar Antes de Entregar</h2>
+
+  <p>Na hora da prova, depois de escrever a noticia, confira cada item:</p>
+
+  <ul class="checklist">
+    <li><strong>Titulo:</strong> Minha noticia tem um titulo curto e claro que resume o fato?</li>
+    <li><strong>Linha fina:</strong> Coloquei uma frase complementar abaixo do titulo?</li>
+    <li><strong>Lead:</strong> Meu primeiro paragrafo responde O QUE, QUEM, QUANDO, ONDE?</li>
+    <li><strong>Corpo:</strong> Os paragrafos seguintes trazem mais detalhes e depoimentos?</li>
+    <li><strong>Fato, nao opiniao:</strong> Evitei colocar minha opiniao pessoal no texto?</li>
+    <li><strong>Depoimentos:</strong> Se usei falas de pessoas, coloquei entre aspas?</li>
+    <li><strong>Linguagem:</strong> Usei linguagem formal, sem girias?</li>
+    <li><strong>3a pessoa:</strong> Escrevi em terceira pessoa (ele/ela), sem usar "eu"?</li>
+    <li><strong>Verbos no passado:</strong> Usei passado para relatar o que aconteceu?</li>
+    <li><strong>Ortografia:</strong> Revisei acentos, virgulas e ortografia?</li>
+  </ul>
+</div>
+
+<!-- ==================== MODELO EM BRANCO ==================== -->
+<div class="section">
+  <h2><span class="emoji-title">📝</span> 7. Modelo para Treinar</h2>
+
+  <p>Use este modelo para praticar escrevendo sua propria noticia sobre qualquer assunto:</p>
+
+  <div class="noticia-exemplo" style="border-style: dashed;">
+    <div class="noticia-header" style="background: #718096;">
+      <span>NOME DO JORNAL: ___________________</span>
+      <span>Data: ___/___/2026</span>
+    </div>
+    <div class="noticia-body">
+      <div style="margin-bottom: 4px;"><span class="label-box label-titulo">TITULO</span></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px; margin-bottom: 10px;"></div>
+
+      <div style="margin-bottom: 4px;"><span class="label-box label-linhafina">LINHA FINA</span></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px; margin-bottom: 10px;"></div>
+
+      <div style="margin-bottom: 4px; margin-top: 14px;"><span class="label-box label-lead">LEAD - Responda: O que? Quem? Quando? Onde? Como? Por que?</span></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px;"></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px;"></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px; margin-bottom: 10px;"></div>
+
+      <div style="margin-bottom: 4px;"><span class="label-box label-corpo">CORPO - Detalhes, dados e depoimentos</span></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px;"></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px;"></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px;"></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px;"></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px;"></div>
+      <div style="border-bottom: 1px solid #cbd5e0; height: 36px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== RESUMAO ==================== -->
+<div class="section">
+  <h2><span class="emoji-title">🧠</span> Resumao Final</h2>
+
+  <div class="resumo-box">
+    <p><strong>1. NOTICIA</strong> = texto jornalistico que informa sobre fatos reais e atuais.</p>
+    <p style="margin-top:8px"><strong>2. ESTRUTURA:</strong> Titulo + Linha fina + Lead (1o paragrafo com O que/Quem/Quando/Onde/Como/Por que) + Corpo (detalhes e depoimentos).</p>
+    <p style="margin-top:8px"><strong>3. LINGUAGEM:</strong> clara, objetiva, em 3a pessoa, norma padrao, sem girias, verbos no passado.</p>
+    <p style="margin-top:8px"><strong>4. FATO vs OPINIAO:</strong> noticia so tem fatos e informacoes. Opiniao so aparece entre aspas, atribuida a alguem.</p>
+    <p style="margin-top:8px"><strong>5. Na prova:</strong> voce recebera um tema e devera escrever uma noticia completa. Use o checklist e lembre-se da estrutura!</p>
+  </div>
+</div>
+
+<div style="text-align: center; color: #a0aec0; padding: 20px; font-size: 0.9em;">
+  Material preparado para estudo | Processual de Lingua Portuguesa | Bons estudos!
+</div>
+
+</div>
+</body>
+</html>
